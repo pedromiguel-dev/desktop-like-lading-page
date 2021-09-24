@@ -1,0 +1,68 @@
+@font-face {
+  font-family: pixel;
+  src: url(../superstar_2/superstar_memesbruh03.ttf);
+}
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  background-image: repeating-linear-gradient(
+      rgb(198, 183, 242) 0 1px,
+      transparent 1px 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgb(198, 183, 242) 0 1px,
+      transparent 1px 100%
+    );
+  background-size: 71px 71px;
+  height: 100vh;
+  overflow: hidden;
+  font-family: pixel;
+}
+.window {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  overflow: auto;
+  border: 4px rgb(241, 137, 131) solid;
+  &__barra {
+    background-color: yellow;
+    height: 10%;
+    background-color: rgb(247, 204, 203);
+    border-bottom: 4px rgb(241, 137, 131) solid;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(241, 137, 131);
+    & p {
+      pointer-events: none;
+    }
+    &:after {
+      position: absolute;
+      right: 0;
+      right: 10px;
+      color: rgb(241, 137, 131);
+      content: "\d7";
+      font-size: 40px;
+      font-weight: 900;
+    }
+  }
+  &__conteudo {
+    height: 90%;
+  }
+}
+
+.dock {
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  bottom: 0;
+  background-color: rgb(241, 137, 131);
+}

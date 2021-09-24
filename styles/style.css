@@ -1,0 +1,73 @@
+@font-face {
+  font-family: pixel;
+  src: url(../superstar_2/superstar_memesbruh03.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  background-image: repeating-linear-gradient(#c6b7f2 0 1px, transparent 1px 100%), repeating-linear-gradient(90deg, #c6b7f2 0 1px, transparent 1px 100%);
+  background-size: 71px 71px;
+  height: 100vh;
+  overflow: hidden;
+  font-family: pixel;
+}
+
+.window {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  overflow: auto;
+  border: 4px #f18983 solid;
+}
+
+.window__barra {
+  background-color: yellow;
+  height: 10%;
+  background-color: #f7cccb;
+  border-bottom: 4px #f18983 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  font-size: 20px;
+  color: #f18983;
+}
+
+.window__barra p {
+  pointer-events: none;
+}
+
+.window__barra:after {
+  position: absolute;
+  right: 0;
+  right: 10px;
+  color: #f18983;
+  content: "\d7";
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.window__conteudo {
+  height: 90%;
+}
+
+.dock {
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  bottom: 0;
+  background-color: #f18983;
+}
+/*# sourceMappingURL=style.css.map */
