@@ -12,40 +12,33 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="construirJanela()">crar</button>
-
-    <section class="window">
-      <header class="window__barra">
-        <p>Título</p>
-        <button id="close" class="window__button">
-          <i class="fas fa-times"></i>
-        </button>
-      </header>
-      <article class="window__conteudo"></article>
-    </section>
-
-    <section class="window outro">
-      <header class="window__barra">
-        <p>Título</p>
-        <button id="close" class="window__button">
-          <i class="fas fa-times"></i>
-        </button>
-      </header>
-      <article class="window__conteudo"></article>
-    </section>
+    <!-- navugation bar -->
+    <nav class="dock">
+      <button onclick="construirJanela()">criar</button>
+      <button onclick="construirJanela()">criar</button>
+      <button onclick="construirJanela()">criar</button>
+    </nav>
 
     <template>
       <section class="window outro">
         <header class="window__barra">
-          <p></p>
-          <button id="close" class="window__button">
-            <i class="fas fa-times"></i>
-          </button>
+          <p class="window__titulo">Testte de teto</p>
+          <div class="window__wrapper">
+            <button id="min" class="window__button">
+              <i class="fas fa-window-minimize"></i>
+            </button>
+            <button id="max" class="window__button">
+              <i class="far fa-square"></i>
+            </button>
+            <button id="fechar" class="window__button">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </header>
         <article class="window__conteudo"></article>
       </section>
     </template>
-    <footer class="dock"></footer>
-    <script src="arrastarJanelas.js"></script>
+
+    <script src="./globalFunctions/windowBasics.js"></script>
   </body>
 </html>

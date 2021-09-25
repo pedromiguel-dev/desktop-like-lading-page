@@ -1,0 +1,18 @@
+<svg id="Botoes" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #b8afe0;
+        stroke-width: 66.667px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Buttons">
+    <path id="X_Button" data-name="X Button" class="cls-1" d="M110.994,118.018H886.011a10,10,0,0,1,10,10V873.007a10,10,0,0,1-10,10H110.994a10,10,0,0,1-10-10V128.018A10,10,0,0,1,110.994,118.018Z"/>
+  </g>
+  <g id="Buttons_icons" data-name="Buttons icons">
+    <path id="square" class="cls-1" d="M289.025,309.265H708.6V721.182H289.025V309.265h0Z"/>
+  </g>
+</svg>
