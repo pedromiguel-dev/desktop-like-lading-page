@@ -56,7 +56,23 @@ document.addEventListener("click", (e) => {
 //max janelas
 document.addEventListener("click", (e) => {
   if (e.target.id == "max") {
-    e.target.parentElement.parentElement.parentElement.style.width = "100%";
-    e.target.parentElement.parentElement.parentElement.style.height = "100%";
+    let janela = e.target.parentElement.parentElement;
+    if (janela.parentElement.id == "maximized") {
+      janela.parentElement.style.top = "0";
+      janela.parentElement.style.left = "0";
+      janela.parentElement.style.width = "";
+      janela.parentElement.style.height = "";
+      janela.parentElement.style.position = "";
+      janela.parentElement.style.borderRadius = "";
+      janela.parentElement.id = "";
+      return;
+    }
+    janela.parentElement.style.top = "0";
+    janela.parentElement.style.left = "0";
+    janela.parentElement.style.width = "100%";
+    janela.parentElement.style.height = "92%";
+    janela.parentElement.style.position = "static";
+    janela.parentElement.style.borderRadius = "0";
+    janela.parentElement.id = "maximized";
   }
 });

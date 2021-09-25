@@ -14,9 +14,26 @@
   <body>
     <!-- navugation bar -->
     <nav class="dock">
-      <button onclick="construirJanela()">criar</button>
-      <button onclick="construirJanela()">criar</button>
-      <button onclick="construirJanela()">criar</button>
+      <div class="dock__wrapper__main">
+        <button id="menu" onclick="abrirMenu()">menu principal</button>
+        <button id="pesquisar" onclick="abrirMenu()">pesquisar</button>
+      </div>
+      <div class="dock__wrapper__apps">
+        <button onclick="construirJanela()">apps</button>
+        <button onclick="construirJanela()">apps</button>
+        <button onclick="construirJanela()">apps</button>
+        <button onclick="construirJanela()">apps</button>
+        <button onclick="construirJanela()">apps</button>
+        <button onclick="construirJanela()">apps</button>
+      </div>
+      <div class="dock__wrapper__status">
+        <button onclick="abrirStatus()">status</button>
+        <div id="data-hora">
+          <p class="hora">hora</p>
+          <p class="data">data</p>
+        </div>
+        <button onclick="abrirNotificacao()">Notificacao</button>
+      </div>
     </nav>
 
     <template>

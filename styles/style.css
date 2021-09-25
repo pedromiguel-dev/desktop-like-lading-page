@@ -11,6 +11,7 @@
 }
 
 body {
+  position: relative;
   background-color: aliceblue;
   background-image: repeating-linear-gradient(#c6b7f2 0 1px, transparent 1px 100%), repeating-linear-gradient(90deg, #c6b7f2 0 1px, transparent 1px 100%);
   background-size: 71px 71px;
@@ -50,7 +51,7 @@ body {
   color: #f18983;
 }
 
-.window__barra p {
+.window__titulo {
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -107,8 +108,49 @@ body {
   background-color: #f18983;
 }
 
-.dock button {
-  margin: 0 10px;
+.dock__wrapper__main {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  gap: 5px;
+}
+
+.dock__wrapper__apps {
+  padding: 0 10px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.dock__wrapper__status {
+  padding: 0 10px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .outro {
