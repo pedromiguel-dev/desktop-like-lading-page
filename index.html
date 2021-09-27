@@ -15,24 +15,19 @@
     <!-- navugation bar -->
     <nav class="dock">
       <div class="dock__wrapper__main">
-        <button id="menu" onclick="abrirMenu()">menu principal</button>
-        <button id="pesquisar" onclick="abrirMenu()">pesquisar</button>
+        <button id="menu" data-tipo="menu">menu principal</button>
+        <button id="pesquisar" data-tipo="pesquisar">pesquisar</button>
       </div>
       <div class="dock__wrapper__apps">
-        <button onclick="construirJanela()">apps</button>
-        <button onclick="construirJanela()">apps</button>
-        <button onclick="construirJanela()">apps</button>
-        <button onclick="construirJanela()">apps</button>
-        <button onclick="construirJanela()">apps</button>
-        <button onclick="construirJanela()">apps</button>
+        <button data-tipo="app" id="app">apps</button>
       </div>
       <div class="dock__wrapper__status">
-        <button onclick="abrirStatus()">status</button>
+        <button data-tipo="status">status</button>
         <div id="data-hora">
           <p class="hora">hora</p>
           <p class="data">data</p>
         </div>
-        <button onclick="abrirNotificacao()">Notificacao</button>
+        <button data-tipo="notificacao"">Notificacao</button>
       </div>
     </nav>
 
@@ -56,6 +51,6 @@
       </section>
     </template>
 
-    <script src="./globalFunctions/windowBasics.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
