@@ -9,6 +9,7 @@
 }
 body {
   position: relative;
+  isolation: isolate;
   background-color: aliceblue;
   background-image: repeating-linear-gradient(
       rgb(198, 183, 242) 0 1px,
@@ -34,7 +35,7 @@ body {
   border: 4px rgb(241, 137, 131) solid;
   &__barra {
     width: 100%;
-    height: 10%;
+    height: 14%;
     display: flex;
     justify-content: space-between;
     background-color: yellow;
@@ -70,7 +71,7 @@ body {
     }
   }
   &__conteudo {
-    height: 90%;
+    height: 86%;
   }
 }
 

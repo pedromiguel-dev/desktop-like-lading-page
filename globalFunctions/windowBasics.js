@@ -10,8 +10,8 @@ function construirJanela(e) {
 }
 //mover janela
 function moverJanela(e) {
+  let target = e.target;
   if (e.target.nodeName == "HEADER") {
-    var target = e.target;
     target.addEventListener("mousemove", onDrag);
     if (janelas) {
       for (var i = 0; i < janelas.length; i++) {
@@ -23,13 +23,17 @@ function moverJanela(e) {
     return;
   }
   document.addEventListener("mouseup", () => {
+    let topVal = parseInt(target.parentElement.style.top);
+    if (topVal < 0) {
+      target.removeEventListener("mousemove", onDrag);
+      target.parentElement.style.top = "0";
+    }
     target.removeEventListener("mousemove", onDrag);
   });
 }
 function onDrag({ movementX, movementY }) {
   let parent = this.parentElement;
   let getStyle = window.getComputedStyle(parent);
-
   let leftVal = parseInt(getStyle.left);
   let topVal = parseInt(getStyle.top);
   parent.style.left = `${leftVal + movementX}px`;
